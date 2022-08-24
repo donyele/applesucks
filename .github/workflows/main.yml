@@ -15,7 +15,7 @@ jobs:
     - name: Auth
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
-        NGROK_AUTH_TOKEN: (TOKEN NG NGROK ACCOUNT NYO)
+        NGROK_AUTH_TOKEN: 2DoFTKdVhEx0tiaBIOVhHVuTd2M_4XGhjeX2YritojAowQVTG
     - name: Enable TS
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
